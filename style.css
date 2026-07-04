@@ -1,51 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
-    color: #333;
+/* Advance Professional Color Theme */
+:root {
+    --primary: #0A2342;   /* Navy Blue - Header */
+    --secondary: #FFD700; /* Gold - Highlights */
+    --accent: #0077b6;    /* Blue - Buttons */
+    --bg: #F4F7F9;        /* Light Gray - Background */
+    --text: #2D3436;      /* Dark Gray - Text */
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
 header {
-    background: #0077b6;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     color: white;
     text-align: center;
-    padding: 40px 0;
+    padding: 50px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid white;
+nav {
+    background: var(--primary);
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
     color: white;
+    margin: 0 20px;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary); /* Gold hover */
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary); /* Gold Border */
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4); /* Gold Glow */
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.08);
 }
 
 section {
     background: white;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    max-width: 900px;
+    border-left: 5px solid var(--accent);
 }
 
-.skills-box {
-    margin-bottom: 20px;
+h2 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
 }
 
 footer {
+    background: var(--primary);
+    color: white;
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: white;
+    margin-top: 40px;
 }
