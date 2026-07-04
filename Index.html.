@@ -7,38 +7,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>Shahzad Muhammad</h1>
-        <img src="Screenshot_20251231-205352.png" alt="Shahzad Muhammad" style="width:150px">
-        <p>ICT Lecturer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <img src="photo.png" alt="Shahzad Muhammad" class="profile-pic">
+            <h1>Shahzad Muhammad</h1>
+            <p>ICT Lecturer & HR Professional</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="container">
         <h2>About Me</h2>
-        <p>I am an ICT Lecturer and HR professional with experience in teaching technology.</p>
+        <p>
+            I am an experienced ICT Lecturer and HR professional with a passion for teaching technology 
+            and developing people. I specialize in Computer Science, Web Development, MS Office, 
+            and Human Resource Management.
+        </p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="container">
         <h2>My Skills</h2>
-        <ul>
-            <li><b>ICT:</b> Computer Teaching, MS Office, Web Development, AI Tools</li>
-            <li><b>HR:</b> Recruitment, Training, Employee Relations</li>
-            <li><b>Soft Skills:</b> Communication, Leadership</li>
-        </ul>
+        <div class="skills-box">
+            <h3>💻 ICT Skills</h3>
+            <ul>
+                <li>Computer Teaching & Training</li>
+                <li>MS Office, Web Development, AI Tools</li>
+                <li>HTML, CSS, JavaScript</li>
+            </ul>
+        </div>
+        <div class="skills-box">
+            <h3>👔 HR Skills</h3>
+            <ul>
+                <li>Recruitment & Selection</li>
+                <li>Training & Development</li>
+                <li>Employee Relations</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Contact Me</h2>
-        <p>Email: your.email@gmail.com</p>
-        <p>Phone: 03xx-xxxxxxx</p>
+        <p><b>Email:</b> your.email@gmail.com</p>
+        <p><b>Phone:</b> 03xx-xxxxxxx</p>
+        <p><b>Location:</b> Peshawar, Pakistan</p>
     </section>
 
-    <footer>© 2026 Shahzad Muhammad | ICT & HR Portfolio</footer>
+    <footer>
+        <p>© 2026 Shahzad Muhammad | ICT Lecturer & HR Portfolio</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
