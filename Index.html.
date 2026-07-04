@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahzad Muhammad - ICT Lecturer & HR Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzad Muhammad - ICT Lecturer & HR Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Shahzad Muhammad</h1>
-<img src="Screenshot_20251231-203352.png" alt="Shahzad Muhammad" style="width:150px; border-radius:50%; margin-top:15px;">
-    <p>ICT Le
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Shahzad Muhammad</h1>
+        <img src="Screenshot_20251231-205352.png" alt="Shahzad Muhammad" style="width:150px">
+        <p>ICT Lecturer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an ICT Lecturer and HR professional with experience in teaching technology and managing human resources. Passionate about education, training, and people development.</p>
-  </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an ICT Lecturer and HR professional with experience in teaching technology.</p>
+    </section>
 
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ul>
-      <li><b>ICT:</b> Computer Teaching, MS Office, Web Development, AI Tools</li>
-      <li><b>HR:</b> Recruitment, Training, Employee Relations, Performance Management</li>
-      <li><b>Soft Skills:</b> Communication, Leadership, Presentation</li>
-    </ul>
-  </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li><b>ICT:</b> Computer Teaching, MS Office, Web Development, AI Tools</li>
+            <li><b>HR:</b> Recruitment, Training, Employee Relations</li>
+            <li><b>Soft Skills:</b> Communication, Leadership</li>
+        </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your.email@gmail.com</p>
-    <p>Phone: 03xx-xxxxxxx</p>
-    <button id="btn">Download CV</button>
-  </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@gmail.com</p>
+        <p>Phone: 03xx-xxxxxxx</p>
+    </section>
 
-  <footer>© 2026 Shahzad Muhammad | ICT & HR Portfolio</footer>
-  <script src="script.js"></script>
+    <footer>© 2026 Shahzad Muhammad | ICT & HR Portfolio</footer>
+    <script src="script.js"></script>
 </body>
 </html>
