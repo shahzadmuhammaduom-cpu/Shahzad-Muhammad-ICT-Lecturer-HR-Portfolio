@@ -1,92 +1,121 @@
-/* Advance Professional Color Theme */
-:root {
-    --primary: #0A2342;   /* Navy Blue - Header */
-    --secondary: #FFD700; /* Gold - Highlights */
-    --accent: #0077b6;    /* Blue - Buttons */
-    --bg: #F4F7F9;        /* Light Gray - Background */
-    --text: #2D3436;      /* Dark Gray - Text */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-}
-
-header {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-nav {
-    background: var(--primary);
-    padding: 12px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav a {
-    color: white;
-    margin: 0 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: var(--secondary); /* Gold hover */
-}
-
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid var(--secondary); /* Gold Border */
-    object-fit: cover;
-    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4); /* Gold Glow */
-    transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-    transform: scale(1.08);
-}
-
-section {
-    background: white;
-    margin: 30px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    max-width: 900px;
-    border-left: 5px solid var(--accent);
-}
-
-h2 {
-    color: var(--primary);
-    border-bottom: 2px solid var(--secondary);
-    padding-bottom: 10px;
-}
-
-a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--secondary);
-}
-
-footer {
-    background: var(--primary);
-    color: white;
-    text-align: center;
+    background: linear-gradient(135deg, #00ff88 0%, #000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
-    margin-top: 40px;
+}
+
+.container {
+    background: #1a1f25;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+    padding: 30px 50px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo { 
+    font-size: 24px; 
+    font-weight: 700; 
+    color: #fff;
+}
+.navbar ul { display: flex; list-style: none; gap: 30px; }
+.navbar ul li a { 
+    color: #aaa; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: 0.3s; 
+}
+.navbar ul li a.active, .navbar ul li a:hover { color: #00ff88; }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text h1 { 
+    font-size: 48px; 
+    color: #fff;
+    font-weight: 700;
+}
+.hero-text h3 { 
+    font-size: 26px; 
+    margin: 10px 0 20px; 
+    color: #fff;
+}
+.hero-text span { color: #00ff88; }
+.hero-text p { 
+    color: #aaa; 
+    margin-bottom: 30px; 
+    max-width: 500px; 
+    line-height: 1.7;
+}
+
+.btn {
+    background: #00ff88;
+    color: #000;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover { background: #00cc6a; transform: scale(1.05); }
+
+.social { display: inline-flex; gap: 12px; }
+.social a {
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.social a:hover { background: #00ff88; color: #000; }
+
+.hero-img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+.circle-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #00ff88;
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-45deg);
+}
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 8px;
 }
