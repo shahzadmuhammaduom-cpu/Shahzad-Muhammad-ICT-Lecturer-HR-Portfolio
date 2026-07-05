@@ -1,34 +1,60 @@
-/* Landscape / Desktop ke liye */
-@media(min-width: 900px){
+/* ===== LANDSCAPE / DESKTOP DESIGN ===== */
+@media(min-width: 992px){
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
     .container {
-        padding: 40px 60px;
+        width: 100%;
+        max-width: 1200px;
+        padding: 50px 70px;
+        box-shadow: 0 0 40px rgba(0, 255, 102, 0.2);
     }
     .hero {
         flex-direction: row;
         text-align: left;
-        align-items: center;
     }
     .hero-text {
-        width: 55%;
+        flex: 1;
     }
     .hero-img {
-        width: 40%;
-        height: 400px;
+        flex: 0 0 350px;
     }
-    .hero-text h1 {
-        font-size: 52px;
+    .buttons {
+        display: flex;
+        align-items: center;
     }
 }
 
-/* Mobile ke liye pehle wala */
-@media(max-width: 900px){
-    .hero { 
-        flex-direction: column; 
-        text-align: center; 
+/* ===== MOBILE DESIGN ===== */
+@media(max-width: 991px){
+    .container {
+        margin: 15px;
+        padding: 30px 20px;
     }
-    .hero-img { 
-        width: 250px; 
-        height: 250px; 
-        margin-top: 30px;
+    .navbar ul {
+        gap: 15px;
+        font-size: 14px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-text h3 {
+        font-size: 22px;
+    }
+    .hero-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
     }
 }
