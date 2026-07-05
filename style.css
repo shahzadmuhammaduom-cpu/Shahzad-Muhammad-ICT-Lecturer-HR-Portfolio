@@ -1,4 +1,4 @@
-/* v2 - Rotating Border Update */
+/* v3 - Mobile Responsive + Skills */
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +9,18 @@
 body {
     background: #0a0a0a;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     padding: 20px;
 }
 
 .container {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1100px;
+    margin: auto;
     background: rgba(20, 20, 20, 0.8);
     backdrop-filter: blur(10px);
     border: 2px solid #00ff66;
     border-radius: 20px;
-    padding: 30px 50px;
+    padding: 30px;
     box-shadow: 0 0 40px rgba(0, 255, 102, 0.2);
 }
 
@@ -32,59 +29,63 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .logo { color: #00ff66; font-size: 24px; }
-.navbar ul { list-style: none; display: flex; gap: 30px; }
-.navbar ul li a { text-decoration: none; color: #fff; font-weight: 500; transition: 0.3s; }
+.navbar ul { list-style: none; display: flex; gap: 20px; }
+.navbar ul li a { text-decoration: none; color: #fff; font-weight: 500; transition: 0.3s; font-size: 14px; }
 .navbar ul li a:hover, .navbar ul li a.active { color: #00ff66; border-bottom: 2px solid #00ff66; }
 
-/* HERO SECTION - LANDSCAPE */
+/* HERO SECTION - MOBILE FIRST */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
 }
-.hero-text { flex: 1; min-width: 300px; }
-.hero-text h1 { font-size: 48px; font-weight: 700; }
-.hero-text h3 { font-size: 24px; margin: 10px 0; }
+.hero-text { flex: 1; min-width: 280px; }
+.hero-text h1 { font-size: 36px; font-weight: 700; }
+.hero-text h3 { font-size: 20px; margin: 10px 0; }
 .hero-text h3 span { color: #00ff66; }
-.hero-text p { color: #aaa; margin-bottom: 30px; line-height: 1.6; }
+.hero-text p { color: #aaa; margin-bottom: 20px; line-height: 1.6; font-size: 14px; }
 
 /* BUTTONS & SOCIAL */
-.buttons { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.buttons { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
 .btn {
     background: #00ff66;
     color: #000;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
+    font-size: 14px;
 }
 .btn:hover { background: #00cc52; box-shadow: 0 0 20px #00ff66; }
-.social { display: flex; gap: 15px; }
+.social { display: flex; gap: 12px; }
 .social a {
     color: #00ff66;
-    font-size: 22px;
+    font-size: 18px;
     border: 2px solid #00ff66;
-    width: 45px; height: 45px;
+    width: 40px; height: 40px;
     display: flex; justify-content: center; align-items: center;
     border-radius: 50%;
     transition: 0.3s;
 }
 .social a:hover { background: #00ff66; color: #000; }
 
-/* BEST PRO BORDER WITH ROTATING GLOW */
+/* CHOTI CIRCLE PHOTO WITH ROTATING BORDER */
 .hero-img{
-    width: 260px;
-    height: 260px;
+    width: 180px; /* CHOTA KAR DIYA */
+    height: 180px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 .hero-img::before{
     content: '';
@@ -107,36 +108,4 @@ body {
 }
 .hero-img img{
     width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    object-fit: cover; 
-    object-position: center;
-    z-index: 3;
-    position: relative;
-    box-shadow: 0 0 50px rgba(0, 255, 102, 0.8);
-    transition: 0.5s;
-    display: block;
-}
-.hero-img img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 80px rgba(0, 204, 255, 0.9);
-}
-@keyframes rotateBorder {
-    100% { transform: rotate(360deg); }
-}
-
-/* CONTACT SECTION */
-.contact { margin-top: 80px; text-align: center; }
-.contact h2 { font-size: 32px; color: #00ff66; margin-bottom: 40px; }
-.contact-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.contact-item {
-    background: rgba(0, 255, 102, 0.05);
-    border: 1px solid rgba(0, 255, 102, 0.3);
-    padding: 20px;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-.contact-item:hover { transform: translateY(-5px); background: rgba(0, 255, 102, 0.1); }
-.contact-item i { font-size: 28px; color: #00ff66; margin-bottom: 10px; }
-.contact-item h4 { margin-bottom: 5px; }
-.contact-item p { color: #aaa; font-size: 14px; }
+    height: 
